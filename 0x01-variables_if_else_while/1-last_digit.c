@@ -1,33 +1,34 @@
-#include <stdio.h>
-#include <time.h>
 #include <stdlib.h>
+#include <time.h>
+#include <stdio.h>
+
 /**
- * main-program entry point.
- * Return:0 if no error, non-zero value if error.
+ * Main - Print a random num.
+ *
+ * Return:0
  */
 int main(void)
+
 {
 	int n;
-	int ldigit;
-	
+	ini x;
+
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	ldigit = n % 10;
-	
-	/* your code goes here */
-	if (ldigit > 5);
+	x = n % 10
+	printf("Last digitd of %d is zero %d", n, x);
+	if (x > 5)
 	{
-	printf("Last digit of %d is %d and is greater than 5\n", n, ldigit);
+	printf("and is greater than 5");
 	}
-	/* your code goes here */
-	else if (ldigit == 0);
+	if (x == 0)
 	{
-	printf("Last digit of %d is %d and is 0\n", n, ldigit != 0);
+	printf("and is 0");
 	}
-	/* your code goes here */
-	else if (ldigit < 6 && ldigit != 0);
+	if (x < 6 && x != 0);
 	{
-	printf("Last digit of %d is %d  and less than 6 and 0\n", n, ldigit);
+	printf("and is less than 6 and not 0");
 	}
+	printf("n\");
 	return (0);
 }
