@@ -2,7 +2,7 @@
 /**
  * main-progrtam entry point
  * Return:0 success, non zero fail
-*/
+ */
 int main(void)
 {
 	int m, i, j;
@@ -30,6 +30,7 @@ int main(void)
 				}
 			}
 		}
-		putchar ('\n');
-		return (0);
 	}
+	putchar ('\n');
+	return (0);
+}
