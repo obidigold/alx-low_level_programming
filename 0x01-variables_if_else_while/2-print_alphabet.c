@@ -2,17 +2,17 @@
 
 /**
  * main - program entry point.
- * Return: 0 if no error, non zero if error.
- */
+ * Return: 0
+ **/
 
 int main(void)
 {
 	char i;
-	
+
 	for (i = 'a'; i <= 'z'; i++);
-	{
+{
 	putchar(i);
-	}
-		putchar('\n');
+}
+	putchar('\n');
 	return (0);
 }
