@@ -1,16 +1,17 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 /**
- * main-program entry point.
- * Return:0 no error, non zero if error
+ * main - Entry point
+ *
+ * Return: Always 0
  */
-
 int main(void)
 {
-	char i;
+	int i;
+
 	for (i = '0'; i <= '9'; i++)
-	{
 		putchar(i);
-	}
-	putchar('\n');\
+	putchar('\n');
 	return (0);
 }
