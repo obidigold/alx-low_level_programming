@@ -1,7 +1,8 @@
 #include "main.h"
+
 /**
  * main - print _putchar
- * is written by obidigold
+ * is written by obi
  * Return: 0
  */
 
