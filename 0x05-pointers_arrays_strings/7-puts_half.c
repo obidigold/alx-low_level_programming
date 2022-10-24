@@ -20,9 +20,10 @@ void puts_half(char *str)
 	if (j % 2 == 0)
 	{
 		n = j / 2;
-		{
-			else
-		}
+	}
+
+	else
+	{
 		n = (j + 1) / 2;
 	}
 
