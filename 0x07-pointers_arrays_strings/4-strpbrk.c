@@ -2,26 +2,24 @@
 #include <stdlib>
 
 /**
- * _strpbrk - searchs a string for any of a set of bytes
- * @s: the string to search
- * @accept: the bytes to search for
- * Return: a pointer to the byte in @s that matches one of the bytes in
- * @accept, or NULL if no such byte is found.
+ * _strpbrk - Entry point
+ * @s: input
+ * @accept: input
+ * Return: Always 0 (Success)
  */
 
 char *_strpbrk(char *s, char *accept)
 {
-	int i;
+	int i, n;
 
-	while (*s)
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		for (i = 0; accept[i]; i++)
+		for (n = 0; accept[n] != '\0'; n++)
 		{
-			if (*s == accept[i])
-				return (s);
+			if (s[i] == accept[n])
+				return (s + i);
 		}
-		s++;
-
 	}
+
 	return (NULL);
 }
