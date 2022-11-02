@@ -1,4 +1,4 @@
-#inlcude "main.h"
+#include "main.h"
 
 /**
  * wildcmp - compares two strings and returns 1 if the strings
