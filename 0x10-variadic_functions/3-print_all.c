@@ -43,6 +43,7 @@ void chk_float(va_list list)
 void chk_string(va_list list)
 {
 	char *str;
+
 	str = va_arg(list, char *);
 	if (str == NULL)
 		str = "(nil)";
@@ -71,6 +72,7 @@ void print_all(const char * const format, ...)
 	char *sep = "";
 
 	va_start(list, format);
+
 	while (format && format[x])
 	{
 		while (types[y].chk)
